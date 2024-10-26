@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GitHub Explanation</title>
+    <style>
+        /* Reset and common styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #f5f5f5; /* Light background for the body */
+        }
+
+        /* Dark Mode Topbar */
+        .topbar {
+            background-color: #1a1a1a; /* Dark background for the topbar */
+            padding: 1rem; /* Padding around the topbar */
+        }
+
+        .topbar .container {
+            max-width: 1200px; /* Max width for the container */
+            margin: 0 auto; /* Center the container */
+            display: flex; /* Flexbox for alignment */
+            justify-content: space-between; /* Space between elements */
+            align-items: center; /* Center items vertically */
+        }
+
+        .topbar .logo {
+            color: #00ff9d; /* Logo color */
+            font-size: 1.5rem; /* Logo font size */
+            font-weight: bold; /* Bold text */
+            text-decoration: none; /* No underline */
+        }
+
+        .topbar .nav-links {
+            display: flex; /* Flexbox for nav links */
+            gap: 2rem; /* Space between links */
+        }
+
+        .topbar .nav-links a {
+            color: #fff; /* Link color */
+            position: relative; /* Position for the hover effect */
+            text-decoration: none; /* No underline */
+        }
+
+        .topbar .nav-links a::after {
+            content: ''; /* Create a pseudo-element for the hover effect */
+            position: absolute; /* Positioning relative to the link */
+            bottom: -5px; /* Position below the text */
+            left: 0; /* Align to the left */
+            width: 0; /* Initial width */
+            height: 2px; /* Height of the underline */
+            background-color: #00ff9d; /* Color of the underline */
+            transition: width 0.3s; /* Animation for width change */
+        }
+
+        .topbar .nav-links a:hover::after {
+            width: 100%; /* Expand underline on hover */
+        }
+
+        /* Container for main content */
+        .container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 20px;
+            max-width: 1200px;
+            margin: 2rem auto; /* Add space between the top bar and the content */
+        }
+
+        .image-section {
+            flex: 1;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .text-section {
+            flex: 1;
+            padding: 20px;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Initial shadow for floating effect */
+        }
+
+        img:hover {
+            transform: translateY(-10px); /* Moves the image up */
+            box-shadow: 0 15px 25px rgba(0, 0, 0, 0.3); /* Larger shadow on hover */
+        }
+
+        /* Responsive design */
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Top Bar Section -->
+    <div class="topbar">
+        <div class="container">
+            <a href="template2.html" class="logo">LEARNING WORK</a> <!-- Logo link -->
+            <nav class="nav-links">
+                <a href="Basics.html">Basics</a>
+                <a href="git.html">Git</a>
+                <a href="github.html">Github</a>
+                <a href="vscode.html">VS code</a>
+            </nav>
+        </div>
+    </div>
+
+    <!-- Main Content Section -->
+    <div class="container">
+        <!-- Image Section (Left) -->
+        <div class="image-section">
+            <img src="https://imgs.search.brave.com/injYJCK3RG_iCgyKQ0iZxkeVsu_IGL9MpHRUeL_hIe8/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pMC53/cC5jb20vYnVpbGQ1/bmluZXMuY29tL3dw/LWNvbnRlbnQvdXBs/b2Fkcy8yMDI0LzA1/L0dpdEh1Yl9GZWF0/dXJlZF9JbWFnZV8y/MDI0LmpwZz9maXQ9/OTAwLDUwNiZzc2w9/MQ" alt="GitHub Image">
+        </div>
+
+        <!-- Text Section (Right) -->
+        <div class="text-section">
+            <h1>What is GitHub?</h1>
+            <p>GitHub is a web-based platform where users can host Git repositories. It helps you facilitate easy sharing and collaboration on projects with anyone at any time. GitHub also encourages broader participation in open-source projects by providing a secure way to edit files in another user's repository. To host (or share) a Git repository on GitHub, follow the steps below:</p>
+            <dl>
+                <dt>Step 1:-</dt>
+                <dd>Signup for a GitHub account. The first step to begin hosting on GitHub is to create a personal account. Visit the official registration page to sign up.</dd>
+                <dt>Step 2:-</dt>
+                <dd>Create a remote repository in GitHub. After signing up for an account, create a home (a repository) in GitHub for the Git repository you want to share.</dd>
+                <dt>Step 3:-</dt>
+                <dd>Connect the project’s Git directory to the remote repository. Once you've created a remote repository for your project, link the project’s .git directory — located locally on your system — with the remote repository on GitHub.</dd>
+            </dl>
+        </div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Work</title>
+    <style>
+        /* Reset and common styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        /* Set background image for body */
+        body {
+            background-image: url('https://img.freepik.com/free-photo/3d-cartoon-night-sky_23-2151705396.jpg?t=st=1729951859~exp=1729955459~hmac=101547be5c0282e58eaedd04e9ebae68119a37fe3bc881052d4afb63ad0cecd8&w=1380'); /* Change the URL for your desired background */
+            background-size: cover; /* Cover the entire body */
+            background-repeat: no-repeat; /* Do not repeat the background image */
+            background-attachment: fixed; /* Fix the background image */
+            background-color: #f5f5f5; /* Fallback color */
+            color: white; /* Default text color */
+        }
+
+        /* Dark Mode Topbar */
+        .topbar {
+            background-color: rgba(26, 26, 26, 0.8); /* Dark background with transparency */
+            padding: 1rem; /* Padding around the topbar */
+            position: sticky; /* Stick to the top */
+            top: 0; /* Positioning */
+            z-index: 1000; /* Ensure it's above other content */
+        }
+
+        .topbar .container {
+            max-width: 1200px; /* Max width for the container */
+            margin: 0 auto; /* Center the container */
+            display: flex; /* Flexbox for alignment */
+            justify-content: space-between; /* Space between elements */
+            align-items: center; /* Center items vertically */
+        }
+
+        .topbar .logo {
+            color: #00ff9d; /* Logo color */
+            font-size: 1.5rem; /* Logo font size */
+            font-weight: bold; /* Bold text */
+            text-decoration: none; /* No underline */
+        }
+
+        .topbar .nav-links {
+            display: flex; /* Flexbox for nav links */
+            gap: 2rem; /* Space between links */
+        }
+
+        .topbar .nav-links a {
+            color: #fff; /* Link color */
+            position: relative; /* Position for the hover effect */
+            text-decoration: none; /* No underline */
+        }
+
+        .topbar .nav-links a::after {
+            content: ''; /* Create a pseudo-element for the hover effect */
+            position: absolute; /* Positioning relative to the link */
+            bottom: -5px; /* Position below the text */
+            left: 0; /* Align to the left */
+            width: 0; /* Initial width */
+            height: 2px; /* Height of the underline */
+            background-color: #00ff9d; /* Color of the underline */
+            transition: width 0.3s; /* Animation for width change */
+        }
+
+        .topbar .nav-links a:hover::after {
+            width: 100%; /* Expand underline on hover */
+        }
+
+        .topbar .search-box {
+            background-color: #333; /* Dark background for search box */
+            border: 1px solid #444; /* Border color */
+            padding: 0.5rem 1rem; /* Padding */
+            color: white; /* Text color */
+            border-radius: 4px; /* Rounded corners */
+            outline: none; /* Remove outline */
+        }
+
+        .topbar .search-box::placeholder {
+            color: rgba(255, 255, 255, 0.7); /* Placeholder color */
+        }
+
+        .topbar .profile-btn {
+            border-color: #00ff9d; /* Border color for button */
+            color: #00ff9d; /* Text color for button */
+            background-color: transparent; /* Transparent background */
+            padding: 0.5rem 1rem; /* Padding */
+            border: 2px solid; /* Solid border */
+            border-radius: 4px; /* Rounded corners */
+            cursor: pointer; /* Pointer cursor */
+            transition: all 0.3s; /* Smooth transition */
+        }
+
+        .topbar .profile-btn:hover {
+            background-color: #00ff9d; /* Background color on hover */
+            color: #1a1a1a; /* Text color on hover */
+        }
+
+        /* Hero Section Styles */
+        .hero {
+            background-image: url('https://source.unsplash.com/1600x900/?technology'); /* Hero image */
+            background-size: cover; /* Cover the entire section */
+            color: white; /* White text */
+            padding: 100px 20px; /* Padding */
+            text-align: center; /* Center text */
+            position: relative; /* Positioning for overlay */
+        }
+
+        .hero h1 {
+            font-size: 3rem; /* Large font size */
+            margin-bottom: 10px; /* Margin below title */
+            color: rgb(221, 53, 41);
+        }
+
+        .hero p {
+            font-size: 1.5rem; /* Medium font size */
+            margin-bottom: 20px; /* Margin below paragraph */
+            color: #86b2d6;
+        }
+
+        /* Main Content Styles */
+        .main {
+            max-width: 1200px; /* Max width for content */
+            margin: 20px auto; /* Center content */
+            display: grid; /* Grid layout */
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive grid */
+            gap: 20px; /* Space between cards */
+            padding: 20px; /* Padding */
+        }
+
+        .card {
+            background-color: white; /* White background */
+            border-radius: 10px; /* Rounded corners */
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Shadow */
+            padding: 20px; /* Padding */
+            text-align: center; /* Center text */
+            transition: transform 0.3s; /* Transition for scaling */
+            text-decoration: none; /* No underline on links */
+        }
+
+        .card:hover {
+            transform: scale(1.05); /* Scale up on hover */
+        }
+
+        .card h3 {
+            color: #4CAF50; /* Green color for headings */
+            margin-bottom: 10px; /* Margin below headings */
+        }
+
+        .card p {
+            color: #666; /* Text color */
+        }
+    </style>
+</head>
+<body>
+    <!-- Dark Mode Topbar -->
+    <div class="topbar">
+        <div class="container">
+            <a href="template2.html" class="logo">LEARNING WORK</a> <!-- Logo link -->
+            <nav class="nav-links">
+                <a href="Basics.html">Basics</a>
+                <a href="git.html">Git</a>
+                <a href="github.html">Github</a>
+                <a href="vscode.html">VS Code</a>
+            </nav>
+            <div class="actions">
+                <input type="search" placeholder="Search..." class="search-box"> <!-- Search box -->
+                <button class="profile-btn">Login</button> <!-- Login button -->
+            </div>
+        </div>
+    </div>
+
+    <div class="hero">
+        <h1>Learning of Technology</h1>
+        <p>Your journey begins here</p>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main">
+        <a href="Basics.html" class="card">
+            <h3>Basics</h3>
+            <p>Basic info about various topics</p>
+        </a>
+        <a href="git.html" class="card">
+            <h3>Git</h3>
+            <p>Explanation about Git and how to use it.</p>
+        </a>
+        <a href="github.html" class="card">
+            <h3>Github</h3>
+            <p>What is Github and how to use it.</p>
+        </a>
+        <a href="vscode.html" class="card">
+            <h3>VS Code</h3>
+            <p>Visual Studio Code and utilization tips.</p>
+        </a>
+    </div>
+</body>
+</html>

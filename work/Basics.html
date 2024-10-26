@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basics of our work</title>
+    <style>
+        /* Reset and common styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #f5f5f5; /* Light background for the body */
+        }
+
+        /* Style 3: Dark Mode Topbar */
+        .topbar {
+            background-color: #1a1a1a; /* Dark background for the topbar */
+            padding: 1rem; /* Padding around the topbar */
+        }
+
+        .topbar .container {
+            max-width: 1200px; /* Max width for the container */
+            margin: 0 auto; /* Center the container */
+            display: flex; /* Flexbox for alignment */
+            justify-content: space-between; /* Space between elements */
+            align-items: center; /* Center items vertically */
+        }
+
+        .topbar .logo {
+            color: #00ff9d; /* Logo color */
+            font-size: 1.5rem; /* Logo font size */
+            font-weight: bold; /* Bold text */
+            text-decoration: none; /* No underline */
+        }
+
+        .topbar .nav-links {
+            display: flex; /* Flexbox for nav links */
+            gap: 2rem; /* Space between links */
+        }
+
+        .topbar .nav-links a {
+            color: #fff; /* Link color */
+            position: relative; /* Position for the hover effect */
+            text-decoration: none; /* No underline */
+        }
+
+        .topbar .nav-links a::after {
+            content: ''; /* Create a pseudo-element for the hover effect */
+            position: absolute; /* Positioning relative to the link */
+            bottom: -5px; /* Position below the text */
+            left: 0; /* Align to the left */
+            width: 0; /* Initial width */
+            height: 2px; /* Height of the underline */
+            background-color: #00ff9d; /* Color of the underline */
+            transition: width 0.3s; /* Animation for width change */
+        }
+
+        .topbar .nav-links a:hover::after {
+            width: 100%; /* Expand underline on hover */
+        }
+
+        /* Main content styles */
+        .container {
+            max-width: 1200px; /* Max width for the container */
+            margin: 2rem auto; /* Center the container */
+            padding: 0 20px; /* Padding */
+        }
+
+        /* Image and paragraph styles */
+        .text-section {
+            margin-bottom: 2rem; /* Spacing below text section */
+        }
+
+        .image-section {
+            margin-bottom: 2rem; /* Spacing below image section */
+            text-align: center; /* Center align images */
+        }
+
+        img {
+            max-width: 100%; /* Responsive images */
+            height: auto; /* Maintain aspect ratio */
+            border-radius: 8px; /* Rounded corners */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow for floating effect */
+            transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transition effects */
+            margin: 0.5rem; /* Margin for spacing */
+        }
+
+        img:hover {
+            transform: translateY(-10px); /* Move up on hover */
+            box-shadow: 0 15px 25px rgba(0, 0, 0, 0.3); /* Larger shadow on hover */
+        }
+
+        /* Paragraph styles */
+        .paragraph {
+            line-height: 1.6; /* Line height for readability */
+            color: #333; /* Text color */
+        }
+
+        h1, h4 {
+            text-align: center; /* Center align headings */
+            margin: 1rem 0; /* Margin for headings */
+        }
+    </style>
+</head>
+<body>
+    <!-- Style 3: Dark Mode Topbar -->
+    <div class="topbar">
+        <div class="container">
+            <a href="template2.html" class="logo">LEARNING WORK</a> <!-- Logo link -->
+            <nav class="nav-links">
+                <a href="Basics.html">Basics</a>
+                <a href="git.html">Git</a>
+                <a href="github.html">Github</a>
+                <a href="vscode.html">VS code</a>
+            </nav>
+        </div>
+    </div>
+
+    <div class="container">
+        <!-- Top Image and Paragraph Section -->
+        <div class="image-section">
+            <img src="https://imgs.search.brave.com/w-TsKz5p4zWgqKehhL2UlAwOF3MBvLmzRxzGBZ4ZVKA/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZWVrc2Zvcmdl/ZWtzLm9yZy93cC1j/b250ZW50L2Nkbi11/cGxvYWRzLzIwMjAw/NTI5MjEzNTI5L0dp/dC12cy1HaXRIdWIu/cG5n" alt="Description of Image 2">
+        </div>
+        <div class="text-section">
+            <h1>Differences between Git and GitHub</h1>
+            <h4>Git and GitHub</h4>
+            <p class="paragraph">Git is a version control system that manages and keeps track of your code. GitHub, on the other hand, is a service that lets you host, share, and manage your code files on the internet. GitHub uses Git underneath, allowing you to manage your Git repositories easily on its platform. So, Git is the actual version control system, while GitHub is the platform where you host your code. If you want to learn more about the differences between these two tools, you can explore additional resources.</p>
+        </div>
+
+        <!-- Bottom Floating Image Section -->
+        <div class="image-section">
+            <img src="https://imgs.search.brave.com/QyK-XfKSmU9viLhP0bJsppwgmpulFLFlUMigOrKUTd0/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93d3cu/aHVic3BvdC5jb20v/aHViZnMvZ2l0aHVi/LXZzLWdpdGxhYi5w/bmc" alt="Description of Image 1">
+        </div>
+    </div>
+</body>
+</html>
