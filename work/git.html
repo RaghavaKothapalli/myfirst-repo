@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Git Explanation</title>
+    <style>
+        /* Reset and common styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #f5f5f5; /* Light background for the body */
+        }
+
+        /* Style 3: Dark Mode Topbar */
+        .topbar {
+            background-color: #1a1a1a; /* Dark background for the topbar */
+            padding: 1rem; /* Padding around the topbar */
+        }
+
+        .topbar .container {
+            max-width: 1200px; /* Max width for the container */
+            margin: 0 auto; /* Center the container */
+            display: flex; /* Flexbox for alignment */
+            justify-content: space-between; /* Space between elements */
+            align-items: center; /* Center items vertically */
+        }
+
+        .topbar .logo {
+            color: #00ff9d; /* Logo color */
+            font-size: 1.5rem; /* Logo font size */
+            font-weight: bold; /* Bold text */
+            text-decoration: none; /* No underline */
+        }
+
+        .topbar .nav-links {
+            display: flex; /* Flexbox for nav links */
+            gap: 2rem; /* Space between links */
+        }
+
+        .topbar .nav-links a {
+            color: #fff; /* Link color */
+            position: relative; /* Position for the hover effect */
+            text-decoration: none; /* No underline */
+        }
+
+        .topbar .nav-links a::after {
+            content: ''; /* Create a pseudo-element for the hover effect */
+            position: absolute; /* Positioning relative to the link */
+            bottom: -5px; /* Position below the text */
+            left: 0; /* Align to the left */
+            width: 0; /* Initial width */
+            height: 2px; /* Height of the underline */
+            background-color: #00ff9d; /* Color of the underline */
+            transition: width 0.3s; /* Animation for width change */
+        }
+
+        .topbar .nav-links a:hover::after {
+            width: 100%; /* Expand underline on hover */
+        }
+
+        /* Main Content Styles */
+        h1 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+            text-align: center; /* Center align heading */
+        }
+
+        p {
+            font-size: 1rem;
+            line-height: 1.6;
+            margin-bottom: 1rem;
+            max-width: 800px; /* Max width for paragraph */
+            margin-left: auto; /* Centering */
+            margin-right: auto; /* Centering */
+            padding: 0 20px; /* Padding for small screens */
+        }
+
+        .container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 20px;
+            max-width: 1200px;
+            margin: 20px auto; /* Centering with margin */
+        }
+
+        .text-section {
+            flex: 1;
+            padding: 20px;
+        }
+
+        .image-section {
+            flex: 1;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Initial shadow for floating effect */
+        }
+
+        img:hover {
+            transform: translateY(-10px); /* Moves the image up */
+            box-shadow: 0 15px 25px rgba(0, 0, 0, 0.3); /* Larger shadow on hover */
+        }
+
+        /* Responsive design */
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column; /* Stack elements vertically */
+            }
+
+            .topbar .nav-links {
+                display: none; /* Hide nav links on small screens */
+            }
+
+            .menu-btn {
+                display: block; /* Show menu button */
+                background: none; /* No background */
+                border: none; /* No border */
+                color: white; /* Text color */
+                font-size: 1.5rem; /* Font size */
+                cursor: pointer; /* Pointer cursor */
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Style 3: Dark Mode Topbar -->
+    <div class="topbar">
+        <div class="container">
+            <a href="template2.html" class="logo">LEARNING WORK</a> <!-- Logo link -->
+            <nav class="nav-links">
+                <a href="Basics.html">Basics</a>
+                <a href="git.html">Git</a>
+                <a href="github.html">Github</a>
+                <a href="vscode.html">VS code</a>
+            </nav>
+        </div>
+    </div>
+
+    <div class="container">
+        <!-- Text Section -->
+        <div class="text-section">
+            <h1>What is Git?</h1>
+            <p>Git is a Distributed Version Control System (DVCS) used to save different versions of a file (or set of files) so that any version is retrievable at will. Git also makes it easy to record and compare different file versions. This means that the details about what changed, who changed what, or who initiated an issue are reviewable anytime.</p>
+            <p>The term “distributed” means that whenever you instruct Git to share a project’s directory, Git does not only share the latest file version. Instead, it distributes every version it has recorded for that project. This "distributed" system contrasts with other version control systems, which only share the current version.</p>
+        </div>
+
+        <!-- Image Section -->
+        <div class="image-section">
+            <img src="https://imgs.search.brave.com/cv35RGrYoF4d8cSOT21QMi6Ha2aKt9J1e6EL5UHtBwo/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly90My5m/dGNkbi5uZXQvanBn/LzA4LzY2Lzg3LzI4/LzM2MF9GXzg2Njg3/Mjg5OF8yTHdhbUNT/U2R0QTA5d21Ka2dm/Nmp3TmN3VHQxb0xC/NC5qcGc" alt="Git Image">
+        </div>
+    </div>
+</body>
+</html>
