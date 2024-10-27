@@ -1,172 +1,51 @@
-body {
+body, html {
+    height: 100%;
     font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    color: #333;
 }
 
 .navbar {
-    background-color: #333;
-    overflow: hidden;
-    position: sticky;
-    top: 0;
+    background-color: black; /* Background color of the navbar */
+    overflow: hidden; /* Clear floats */
 }
 
-.nav-item {
-    float: left;
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
+.navbar a {
+    float: left; /* Position links side by side */
+    display: block; /* Make links fill the navbar */
+    color: white; /* Text color */
+    text-align: center; /* Center text */
+    padding: 14px 16px; /* Padding around links */
+    text-decoration: none; /* Remove underline */
 }
 
-.nav-item:hover {
-    background-color: #575757;
+.navbar a:hover {
+    background-color: grey; /* Background color on hover */
 }
 
-.bgimg-1 {
-    background-image: url('https://cdn.pixabay.com/photo/2017/05/10/15/05/himalayas-2301040_1280.jpg');
-    background-size: cover;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    text-align: center;
+.bgimg {
+    background-position: center; /* Center the background image */
+    background-size: cover; /* Cover the entire section */
+    background-image: url("coffeehouse.jpg"); /* Path to your image */
+    height: 75%; /* Height of the header */
+    display: flex; /* Use flexbox to center content */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    color: white; /* Text color */
 }
 
-.logo-text {
-    font-size: 40px;
-    padding: 20px;
-    background: rgba(0, 0, 0, 0.5);
+.header-content {
+    text-align: center; /* Center text within the header */
+}
+
+.header-title {
+    font-size: 90px; /* Size of the title text */
 }
 
 .content {
-    padding: 64px 20px;
-    text-align: center;
+    padding: 20px; /* Padding around content sections */
 }
 
-.about-container {
-    display: flex;
-    justify-content: center;
-    margin-top: 20px;
-}
-
-.about-image {
-    margin-right: 20px;
-}
-
-.about-text {
-    max-width: 500px;
-}
-
-.skills {
-    margin-top: 20px;
-}
-
-.skill-bar {
-    height: 20px;
-    background-color: #4CAF50;
-    margin: 10px 0;
-}
-
-.bgimg-2 {
-    background-image: url('https://cdn.pixabay.com/photo/2017/05/10/15/05/himalayas-2301040_1280.jpg');
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    text-align: center;
-}
-
-.portfolio-text {
-    font-size: 40px;
-}
-
-.portfolio-images {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
-.portfolio-images img {
-    width: 200px;
-    height: auto;
-    margin: 10px;
-    cursor: pointer;
-}
-
-.load-more {
-    padding: 10px 20px;
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    cursor: pointer;
-}
-
-.load-more:hover {
-    background-color: #45a049;
-}
-
-.modal {
-    display: none;
-    position: fixed;
-    z-index: 1000;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    overflow: auto;
-    background-color: rgba(0, 0, 0, 0.9);
-}
-
-.modal-content {
-    margin: auto;
-    display: block;
-    width: 80%;
-    max-width: 700px;
-}
-
-.close-button {
-    color: white;
-    font-size: 40px;
-    position: absolute;
-    top: 10px;
-    right: 25px;
-    cursor: pointer;
-}
-
-.bgimg-3 {
-    background-image: url('https://cdn.pixabay.com/photo/2017/05/10/15/05/himalayas-2301040_1280.jpg');
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    text-align: center;
-}
-
-.contact-container {
-    display: flex;
-    justify-content: center;
-}
-
-.map-image {
-    margin-right: 20px;
-}
-
-.contact-details {
-    max-width: 500px;
-}
-
-.contact-details input {
-    width: 100%;
-    padding: 10px;
-    margin: 10px 0;
-}
-
-.contact-details button {
-    padding: 10px 20px
+.footer {
+    text-align: center; /* Center text in footer */
+    padding: 10px 0; /* Padding for spacing */
+    background-color: lightgrey; /* Footer background color */
 }
