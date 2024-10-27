@@ -1,121 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <title>Cafe Website</title>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles.css"> <!-- Linking to the CSS file -->
 </head>
 <body>
-    <!-- Navbar -->
-    <div class="navbar" id="myNavbar">
-        <a href="#home" class="nav-item">HOME</a>
-        <a href="#about" class="nav-item">ABOUT</a>
-        <a href="#portfolio" class="nav-item">PORTFOLIO</a>
-        <a href="#contact" class="nav-item">CONTACT</a>
-        <a href="#" class="nav-item search"><i class="fa fa-search"></i></a>
-    </div>
 
-    <!-- First Image with Logo Text -->
-    <div class="bgimg-1" id="home">
-        <div class="logo-text">
-            MY <span class="hide-small">WEBSITE</span> LOGO
-        </div>
-    </div>
+<!-- Navigation Bar -->
+<div class="navbar">
+    <a href="#home">HOME</a>
+    <a href="#about">ABOUT</a>
+    <a href="#menu">MENU</a>
+    <a href="#where">WHERE</a>
+</div>
 
-    <!-- About Section -->
-    <div class="content" id="about">
-        <h3>ABOUT ME</h3>
-        <p><em>I love photography</em></p>
-        <p>Welcome to my website! I am a hobby photographer.</p>
-        <div class="about-container">
-            <div class="about-image">
-                <img src="https://cdn.pixabay.com/photo/2017/05/10/15/05/himalayas-2301040_1280.jpg" alt="Photo of Me" width="500" height="333">
-                <p><b>My Name</b></p>
-            </div>
-            <div class="about-text">
-                <p>Welcome to my website. I love photography and enjoy capturing moments. Here's a bit about my skills:</p>
-            </div>
-        </div>
-        <div class="skills">
-            <p>I'm really good at:</p>
-            <p>Photography</p>
-            <div class="skill-bar" style="width:90%"></div>
-            <p>Web Design</p>
-            <div class="skill-bar" style="width:85%"></div>
-            <p>Photoshop</p>
-            <div class="skill-bar" style="width:75%"></div>
-        </div>
+<!-- Header Section -->
+<header class="bgimg" id="home">
+    <div class="header-content">
+        <span class="header-title">the<br>Cafe</span>
+        <span class="header-address">15 Adr street, 5015</span>
     </div>
+</header>
 
-    <!-- Portfolio Section -->
-    <div class="bgimg-2">
-        <div class="portfolio-text">PORTFOLIO</div>
-    </div>
-    <div class="content" id="portfolio">
-        <h3>MY WORK</h3>
-        <p><em>Here are some of my latest works. Click on the images to make them bigger.</em></p>
-        <div class="portfolio-images">
-            <img src="https://cdn.pixabay.com/photo/2018/11/12/20/07/sky-3811643_640.jpg" onclick="onClick(this)" alt="The mist over the mountains">
-            <img src="https://cdn.pixabay.com/photo/2016/11/29/08/58/astronomy-1868560_1280.jpg" onclick="onClick(this)" alt="Coffee beans">
-            <img src="https://cdn.pixabay.com/photo/2016/11/29/03/59/dark-1867202_1280.jpg" onclick="onClick(this)" alt="Bear closeup">
-            <img src="https://cdn.pixabay.com/photo/2017/05/10/15/05/himalayas-2301040_1280.jpg" onclick="onClick(this)" alt="Quiet ocean">
-        </div>
-        <button class="load-more">LOAD MORE</button>
-    </div>
+<!-- About Section -->
+<div class="content" id="about">
+    <h2>ABOUT THE CAFE</h2>
+    <p>The Cafe was founded in blabla by Mr. Smith...</p>
+    <p>We serve fresh made-to-order breakfast and lunch sandwiches...</p>
+    <p><strong>Opening hours:</strong> everyday from 6am to 5pm.</p>
+    <p><strong>Address:</strong> 15 Adr street, 5015, NY</p>
+</div>
 
-    <!-- Modal for full size images on click-->
-    <div id="modal01" class="modal" onclick="this.style.display='none'">
-        <span class="close-button" title="Close Modal Image">&times;</span>
-        <img id="https://cdn.pixabay.com/photo/2017/05/10/15/05/himalayas-2301040_1280.jpg" class="modal-content">
-        <p id="caption"></p>
+<!-- Menu Section -->
+<div class="content" id="menu">
+    <h2>THE MENU</h2>
+    <div class="menu">
+        <h3>Bread Basket</h3>
+        <p>Assortment of fresh baked fruit breads and muffins 5.50</p>
+        <h3>Honey Almond Granola with Fruits</h3>
+        <p>Natural cereal of honey toasted oats 7.00</p>
+        <h3>Belgian Waffle</h3>
+        <p>Vanilla flavored batter with malted flour 7.50</p>
     </div>
+</div>
 
-    <!-- Contact Section -->
-    <div class="bgimg-3">
-        <div class="contact-text">CONTACT</div>
-    </div>
-    <div class="content" id="contact">
-        <h3>WHERE I WORK</h3>
-        <p><em>I'd love your feedback!</em></p>
-        <div class="contact-container">
-            <div class="map-image">
-                <img src="https://cdn.pixabay.com/photo/2017/05/10/15/05/himalayas-2301040_1280.jpg" alt="Map" width="100%">
-            </div>
-            <div class="contact-details">
-                <p><strong>Chicago, US</strong></p>
-                <p>Phone: +00 151515</p>
-                <p>Email: mail@mail.com</p>
-                <form action="/action_page.php" target="_blank">
-                    <input type="text" placeholder="Name" required name="Name">
-                    <input type="email" placeholder="Email" required name="Email">
-                    <input type="text" placeholder="Message" required name="Message">
-                    <button type="submit">SEND MESSAGE</button>
-                </form>
-            </div>
-        </div>
-    </div>
+<!-- Location Section -->
+<div class="content" id="where">
+    <h2>WHERE TO FIND US</h2>
+    <p>Find us at some address at some place.</p>
+</div>
 
-    <!-- Footer -->
-    <footer class="footer">
-        <a href="#home" class="to-top">To the top</a>
-        <div class="social-icons">
-            <i class="fa fa-facebook-official"></i>
-            <i class="fa fa-instagram"></i>
-            <i class="fa fa-twitter"></i>
-            <i class="fa fa-linkedin"></i>
-        </div>
-        <p>Powered by <a href="https://www.w3schools.com" target="_blank">W3.CSS</a></p>
-    </footer>
+<!-- Footer -->
+<footer class="footer">
+    <p>Powered by Cafe Website</p>
+</footer>
 
-    <script>
-        // Modal Image Gallery
-        function onClick(element) {
-            document.getElementById("img01").src = element.src;
-            document.getElementById("modal01").style.display = "block";
-            document.getElementById("caption").innerHTML = element.alt;
-        }
-    </script>
+<script>
+    // This function can be added for interactivity (like tabbed menu)
+</script>
+
 </body>
 </html>
