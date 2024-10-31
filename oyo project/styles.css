@@ -1,0 +1,50 @@
+.hero-section {
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('/api/placeholder/1200/400');
+    background-size: cover;
+    background-position: center;
+    padding: 100px 0;
+    color: white;
+}
+
+.hotel-card {
+    transition: transform 0.3s;
+    margin-bottom: 20px;
+}
+
+.hotel-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.search-box {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.1);
+}
+
+.price {
+    color: #1aa64b;
+    font-weight: bold;
+}
+
+.rating-badge {
+    background: #1aa64b;
+    color: white;
+    padding: 4px 8px;
+    border-radius: 4px;
+}
+
+.amenity-icon {
+    margin-right: 10px;
+    color: #666;
+}
+/*.navbar-nav .nav-item:not(:first-child)::after {
+    content: "";
+    display: inline-block;
+    width: 1px;
+    height: 24px;
+    background-color: #ffffff;
+    margin: 0 15px;
+}
+*/
