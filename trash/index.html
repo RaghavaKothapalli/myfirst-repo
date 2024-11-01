@@ -4,167 +4,163 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>OYO</title>
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="styles.css"> <!-- Custom CSS file -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
 </head>
-<body>
 
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
-        <a class="navbar-brand" style="font-size: 50px; font-weight: 1000;" href="#">OYO</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
-                    <a class="nav-link" href="#"><span class="font-weight-bold">Become a Member</span><br><small>Additional 10% off on stays</small></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#"><span class="font-weight-bold">OYO for Business</span><br><small>Trusted by 5000 Corporates</small></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#"><span class="font-weight-bold">List your property</span><br><small>Start earning in 30 mins</small></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#"><span class="font-weight-bold">0123-6201611</span><br><small>Call us to Book now</small></a>
-                </li>
-            </ul>
-            <ul class="navbar-nav">
-                <li class="nav-item font-weight-bold"><a class="nav-link" href="#">Login / Signup</a></li>
-            </ul>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top shadow-sm">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">OYO</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto align-items-center">
+                    <li class="nav-item">
+                        <a class="nav-link text-center" href="#">
+                            <strong>Become a Member</strong>
+                            <small class="d-block text-muted">10% off on stays</small>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-center" href="#">
+                            <strong>OYO for Business</strong>
+                            <small class="d-block text-muted">Trusted by 5000 Corporates</small>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-center" href="#">
+                            <strong>List your property</strong>
+                            <small class="d-block text-muted">Start earning in 30 mins</small>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-center" href="#">
+                            <strong >0123-6201611</strong>
+                            <small class="d-block text-muted">Call us to Book now</small></a>
+                    </li>
+                    <li class="nav-item ms-3">
+                        <a class="btn " href="#">Login / Signup</a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </nav>
 
-    <!-- Cities Section -->
-    <div class="container-fluid text-center">
+    <div class="container-fluid">
         <div class="city-container">
-            <!-- Bangalore -->
+            <!-- City items remain the same but with improved structure -->
             <div class="city-item">
                 <a href="#" class="city-link d-flex justify-content-between align-items-center">
                     <h2 class="city-name">Bangalore</h2>
-                    <span class="chevron">&#x25BA;</span>
+                    <span class="chevron">›</span>
                 </a>
                 <div class="city-popup">
-                    <strong>Popular Localities</strong>
-                    <a href="#">Koramangala</a>
-                    <a href="#">MG Road</a>
-                    <a href="#">Rajaji Nagar</a>
-                    <div class="view-all">All of Bangalore</div>
+                    <strong class="d-block mb-2">Popular Localities</strong>
+                    <a href="#" class="d-block mb-1">Koramangala</a>
+                    <a href="#" class="d-block mb-1">MG Road</a>
+                    <a href="#" class="d-block mb-1">Rajaji Nagar</a>
+                    <div class="view-all mt-2">All of Bangalore</div>
                 </div>
             </div>
+            <!-- Add other cities similarly -->
 
-            <!-- Chennai -->
             <div class="city-item">
                 <a href="#" class="city-link d-flex justify-content-between align-items-center">
                     <h2 class="city-name">Chennai</h2>
-                    <span class="chevron">&#x25BA;</span>
+                    <span class="chevron">›</span>
                 </a>
                 <div class="city-popup">
-                    <strong>Popular Localities</strong>
-                    <a href="#">T. Nagar</a>
-                    <a href="#">Adyar</a>
-                    <a href="#">Egmore</a>
+                    <strong class="d-block mb-2">Popular Localities</strong>
+                    <a href="#"class="d-block mb-1">T. Nagar</a>
+                    <a href="#"class="d-block mb-1">Adyar</a>
+                    <a href="#"class="d-block mb-1">Egmore</a>
                     <div class="view-all">All of Chennai</div>
                 </div>
             </div>
-
-            <!-- Delhi -->
             <div class="city-item">
                 <a href="#" class="city-link d-flex justify-content-between align-items-center">
                     <h2 class="city-name">Delhi</h2>
-                    <span class="chevron">&#x25BA;</span>
+                    <span class="chevron">›</span>
                 </a>
                 <div class="city-popup">
-                    <strong>Popular Localities</strong>
-                    <a href="#">Connaught Place</a>
-                    <a href="#">Karol Bagh</a>
-                    <a href="#">Saket</a>
+                    <strong class="d-block mb-2">Popular Localities</strong>
+                    <a href="#"class="d-block mb-1">Connaught Place</a>
+                    <a href="#"class="d-block mb-1">Karol Bagh</a>
+                    <a href="#"class="d-block mb-1">Saket</a>
                     <div class="view-all">All of Delhi</div>
                 </div>
             </div>
-            
-            <!-- Gurgaon -->
             <div class="city-item">
                 <a href="#" class="city-link d-flex justify-content-between align-items-center">
                     <h2 class="city-name">Gurgaon</h2>
-                    <span class="chevron">&#x25BA;</span>
+                    <span class="chevron">›</span>
                 </a>
                 <div class="city-popup">
-                    <strong>Popular Localities</strong>
-                    <a href="#">Sector 14</a>
-                    <a href="#">Medanta Hospital</a>
-                    <a href="#">Sector 38</a>
+                    <strong class="d-block mb-2">Popular Localities</strong>
+                    <a href="#"class="d-block mb-1">Sector 14</a>
+                    <a href="#"class="d-block mb-1">Medanta Hospital</a>
+                    <a href="#"class="d-block mb-1">Sector 38</a>
                     <div class="view-all">All of Gurgaon</div>
                 </div>
             </div>
-
-
             <div class="city-item">
                 <a href="#" class="city-link d-flex justify-content-between align-items-center">
                     <h2 class="city-name">Hyderabad</h2>
-                    <span class="chevron">&#x25BA;</span>
+                    <span class="chevron">›</span>
                 </a>
                 <div class="city-popup">
-                    <strong>Popular Localities</strong>
-                    <a href="#">Secunderabad </a>
-                    <a href="#">Gachibowli</a>
-                    <a href="#">Ameerpet</a>
+                    <strong class="d-block mb-2">Popular Localities</strong>
+                    <a href="#"class="d-block mb-1">Secunderabad</a>
+                    <a href="#"class="d-block mb-1">Gachibowli</a>
+                    <a href="#"class="d-block mb-1">Ameerpet</a>
                     <div class="view-all">All of Hyderabad</div>
                 </div>
             </div>
-
-            <!-- Chennai -->
             <div class="city-item">
                 <a href="#" class="city-link d-flex justify-content-between align-items-center">
                     <h2 class="city-name">Kolkata</h2>
-                    <span class="chevron">&#x25BA;</span>
+                    <span class="chevron">›</span>
                 </a>
                 <div class="city-popup">
-                    <strong>Popular Localities</strong>
-                    <a href="#">Barasat</a>
-                    <a href="#">Howrah Railway Station</a>
-                    <a href="#">Salt Lake City</a>
+                    <strong class="d-block mb-2">Popular Localities</strong>
+                    <a href="#"class="d-block mb-1">Barasat</a>
+                    <a href="#"class="d-block mb-1">Howrah Railway Station</a>
+                    <a href="#"class="d-block mb-1">Salt Lake City</a>
                     <div class="view-all">All of Kolkata</div>
                 </div>
             </div>
-
-            <!-- Delhi -->
             <div class="city-item">
                 <a href="#" class="city-link d-flex justify-content-between align-items-center">
                     <h2 class="city-name">Mumbai</h2>
-                    <span class="chevron">&#x25BA;</span>
+                    <span class="chevron">›</span>
                 </a>
                 <div class="city-popup">
-                    <strong>Popular Localities</strong>
-                    <a href="#">Bandra</a>
-                    <a href="#">Colaba</a>
-                    <a href="#">Bandra Kurla Complex</a>
+                    <strong class="d-block mb-2">Popular Localities</strong>
+                    <a href="#"class="d-block mb-1">Bandra</a>
+                    <a href="#"class="d-block mb-1">Colaba</a>
+                    <a href="#"class="d-block mb-1">Bandra Kurla Complex</a>
                     <div class="view-all">All of Mumbai</div>
                 </div>
             </div>
-            
-            <!-- Gurgaon -->
             <div class="city-item">
                 <a href="#" class="city-link d-flex justify-content-between align-items-center">
                     <h2 class="city-name">Noida</h2>
-                    <span class="chevron">&#x25BA;</span>
+                    <span class="chevron">›</span>
                 </a>
                 <div class="city-popup">
-                    <strong>Popular Localities</strong>
-                    <a href="#">Sector 58</a>
-                    <a href="#">Pari Chowk</a>
-                    <a href="#">Sector 18</a>
-                    <a href="#" class="link-active">All of Noida</a>
+                    <strong class="d-block mb-2">Popular Localities</strong>
+                    <a href="#"class="d-block mb-1">Sector 58</a>
+                    <a href="#"class="d-block mb-1">Pari Chowk</a>
+                    <a href="#"class="d-block mb-1">Sector 18</a>
+                    <div class="view-all">All of Noida</div>
                 </div>
             </div>
-
-            <!-- Gurgaon -->
             <div class="city-item">
                 <a href="#" class="city-link d-flex justify-content-between align-items-center">
-                    <h2 class="city-name">All Cities</h2></a>
-               
+                    <h2 class="city-name">All Cities</h2>
+                </a>
             </div>
 
 
@@ -172,9 +168,79 @@
         </div>
     </div>
 
-    <!-- Bootstrap JS and dependencies -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>      
+    <div class="search-container text-center">
+        <h1 class="text-white mb-4">Over 174,000+ hotels and homes across 35+ countries</h1>
+        <div class="search-widget">
+            <div class="row g-3">
+                <div class="col-md-3">
+                    <input type="text" class="form-control" placeholder="Search by city, hotel, or neighborhood">
+                </div>
+                <div class="col-md-3">
+                    <input type="date" class="form-control">
+                </div>
+                <div class="col-md-3">
+                    <select class="form-control">
+                        <option>1 Room, 1 Guest</option>
+                        <option>1 Room, 2 Guests</option>
+                        <option>2 Rooms, 4 Guests</option>
+                    </select>
+                </div>
+                <div class="col-md-3">
+                    <button class="search-button">Search</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+<section class="banners container-fluid ">
+    <div class="row g-3 custom-gap">
+        <div class="col-11 mx-auto">
+            <a href="#" class="banner-link">
+                <img src="/oyo%20project/Img/75P.avif" alt="OYO Promotion" class="img-fluid  rounded">
+            </a>
+        </div>
+        <div class="col-11 custom-gap mx-auto ">
+            <a href="#" class="banner-link">
+                <img src="/oyo%20project/Img/serv.avif" alt="OYO Promotion" class="img-fluid  rounded">
+            </a>
+        </div>
+    </div>
+</section>
+
+
+    <div class="container-fluid">
+        <div class="subscription-box shadow-sm">
+            <div class="row align-items-center">
+                <div class="col-auto">
+                    <div class="flame-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="32" height="32">
+                            <path fill="#FF4B4B" d="M12 23c6.075 0 11-4.925 11-11S18.075 1 12 1 1 5.925 1 12s4.925 11 11 11z"/>
+                            <path fill="#FFB6B6" d="M12 4.5c-2.75 3.5-4.5 5.5-4.5 8.25 0 2.5 2 4.5 4.5 4.5s4.5-2 4.5-4.5c0-2.75-1.75-4.75-4.5-8.25z"/>
+                        </svg>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <h2 class="mb-0">Get access to exclusive deals</h2>
+                    <p class="text-muted mb-0">Only the best deals reach your inbox</p>
+                </div>
+                <div class="col">
+                    <form class="subscription-form">
+                        <div class="input-group">
+                            <input type="email" class="form-control" placeholder="e.g., Example@email.com" aria-label="Your email">
+                            <div class="input-group-append">
+                                <button class="btn btn-notify" type="submit">Notify me</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

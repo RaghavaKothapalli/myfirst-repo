@@ -1,84 +1,240 @@
-/* Styles for the city container */
+:root {
+    --oyo-red: #ee2e24;
+    --oyo-dark: #2d3436;
+}
+
+body {
+    padding-top: 80px;
+    font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+.navbar-brand {
+    color:#000000;
+    font-size: 2.5rem;
+    font-weight: 900;
+}
+
+.nav-link {
+    padding: 0.5rem 1rem !important;
+}
+
 .city-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between; /* Even gaps between items */
-    margin-top: 100px; /* Top margin for the container */
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20px, 1fr));
+    gap: 1rem;
+    padding: 0rem;
 }
 
-/* Styles for each city item */
 .city-item {
-    position: relative; /* Needed for absolute positioning of the popup */
-    flex: 0 0 calc(10% - 10px); /* 10% width minus margins */
-    margin: 5px; /* Adjust margin for even gaps */
-    padding: 10px; /* Padding for city items */
-    background: #fff; /* Background color for visibility */
-    /* Remove border and box-shadow */
+    position: relative;
+    background: #fff;
 }
 
-/* Style for the city link */
+.city-item:hover {
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
 .city-link {
+    padding: 1rem;
     text-decoration: none;
-    color: #8a7f7f;
-    display: flex; /* Ensure the name and chevron are aligned */
-    justify-content: space-between; /* Space between elements */
-    align-items: center; /* Center items vertically */
+    color:#2d3436;
 }
 
-/* City name style */
 .city-name {
-    font-size: 16px;
-    font-weight: bold;
+    font-size: 1.25rem;
     margin: 0;
 }
 
-/* Chevron style */
-.chevron {
-    font-size: 12px;
-    color: #333;
-    transition: transform 0.3s ease; /* Smooth rotation on hover */
-}
-
-/* Popup style for city dropdown menu */
 .city-popup {
-    display: none; /* Hide popups by default */
     position: absolute;
-    top: 100%; /* Position below the city item */
+    top: 100%; /* Position the popup below the city link */
     left: 0;
     background-color: white;
-    border: 1px solid #ccc; /* Keep border for the popup */
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); /* Keep shadow for the popup */
     padding: 10px;
-    z-index: 1000; /* Ensure popups are above other content */
-    width: 200px; /* Set a fixed width for the popups */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1000; /* Ensure the popup appears on top */
+    display: none; /* Hide by default */
 }
 
-/* Show popup on hover */
 .city-item:hover .city-popup {
+    display: block; /* Show the dropdown on hover */
+}
+
+.search-container {
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),
+                url('/api/placeholder/1920/600');
+    background-size: cover;
+    background-position: center;
+    padding: 1rem 1rem;
+    margin-top: 0rem;
+}
+
+.search-widget {
+    background: white;
+    border-radius: 12px;
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 2rem auto;
+}
+
+.search-widget input,
+.search-widget select {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 0.75rem;
+    width: 100%;
+}
+
+.search-button {
+    background:#50e70a;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 0.75rem 2rem;
+    font-weight: 600;
+    width: 100%;
+    transition: all 0.3s ease;
+}
+
+.search-button:hover {
+    background: #3dc000;
+}
+
+.banner-container {
+    margin-top: 2rem;
+}
+
+.banner-image {
+    width: 100%;
+    max-width: 1200px;
+    border-radius: 12px;
+    margin: 1rem auto;
     display: block;
 }
 
-/* Style for links inside the popup */
-.city-popup a {
-    display: block;
-    padding: 5px 0;
-    color: #000; /* Use a clear color for better visibility */
-    text-decoration: none;
-}
+@media (max-width: 768px) {
+    .navbar-brand {
+        font-size: 2rem;
+    }
+    
+    .city-container {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    }
 
-.city-popup a:hover {
-    color: #ff0000; /* Change color on hover for better UX */
-}
-
-/* View all style */
-.view-all {
-    margin-top: 10px;
-    font-weight: bold;
-    color: #000; /* Use a clear color for better visibility */
-    cursor: pointer;
+    .search-widget {
+        padding: 1rem;
+    }
 }
 
 
 
 
 
+
+
+
+
+
+
+
+.custom-gap {
+    margin-top: 75px; /* Adjust the value as needed , THIS IS GAP B/W THE BANNERS*/
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.subscription-box {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    width: 100%;
+    border: 1px solid #e9ecef;
+}
+
+.flame-icon {
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #FFF4F4;
+    border-radius: 50%;
+    padding: 8px;
+}
+
+h2 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #2D3436;
+}
+
+.text-muted {
+    font-size: 0.875rem;
+}
+
+.form-control {
+    height: 48px;
+    border: 1px solid #e9ecef;
+    padding: 0.75rem 1rem;
+    font-size: 0.95rem;
+}
+
+.form-control:focus {
+    box-shadow: none;
+    border-color: #FF4B4B;
+}
+
+.form-control::placeholder {
+    color: #ADB5BD;
+}
+
+.btn-notify {
+    background-color: #FF4B4B;
+    color: white;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    font-weight: 500;
+    min-width: 120px;
+}
+
+.btn-notify:hover {
+    background-color: #ff3333;
+    color: white;
+}
+
+.subscription-form {
+    padding-right: 15px;
+}
+
+@media (max-width: 768px) {
+    .subscription-box {
+        padding: 15px;
+    }
+    
+    .row {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .col-md-4 {
+        margin: 15px 0;
+    }
+    
+    .subscription-form {
+        padding-right: 0;
+        margin-top: 15px;
+    }
+    
+    .flame-icon {
+        margin: 0 auto;
+    }
+}
